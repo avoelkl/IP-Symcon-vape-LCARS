@@ -7,10 +7,6 @@
 .scrollLeft, .scrollRight {
     display: none;
 }
-/* Lösung, damit die Navigation über die gesamte Seite verläuft */
-.ipsTabPane > .navigation > .scroll > .buttons > div:last-child {
-    height: 100%;
-}
 /* DONE */
 .ipsWebFront {
     top: 26px;
@@ -25,7 +21,7 @@
     margin: 0;
     width: 100%;
 }*/
-.ipsWebFront:before, .ipsWebFront div.ipsContainer div.content div.ipsContainer div.navigation:before {
+.ipsWebFront:before, .ipsWebFront .ipsContainer .content .ipsContainer .navigation:before {
     content: "";
     display: block;
     background: url("src/Line.png") no-repeat;
@@ -35,9 +31,13 @@
     background-color: #FF9900;
     background-position: 0 -31px;
 }
-.ipsWebFront div.ipsContainer div.content div.ipsContainer div.navigation:before {
+.ipsWebFront div.ipsContainer .content .ipsContainer .navigation:before {
     margin-top: 0;
-    background: url("src/Line2.png") no-repeat;
+}
+.ipsWebFront .ipsContainer .content .ipsContainer .content .ipsContainer .ipsContainer .navigation:before {
+    background-image: none;
+    background-color: transparent;
+    height: 0;
 }
 .ipsWebFront:after {
     content: "";
@@ -55,6 +55,7 @@
 .ipsTabPane > .navigation {
     height: 100%;
     background-image: none;
+    background-color: #000000;
 }
 .ipsTabPane > .navigation > .scroll {
     height: 100%;
@@ -62,9 +63,12 @@
 }
 .ipsTabPane > .content {
     left: 91px;
+    background-image: none;
 }
 .ipsWebFront div.ipsContainer div.content div.ipsContainer div.ipsContainer div.content {
-    left: 0;
+    /* left: 0;*/
+    /* left: 95px; */
+    left: 50px;
 }
 .ipsTabPane > .navigation > .scroll > .buttons {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -93,25 +97,42 @@
     text-decoration: none;
     opacity: 1;
 }
+.ipsTabPane > .navigation > .scroll > .buttons > div > .ipsContainer > .navigation > .buttons {
+    height: 30px;
+}
 .ipsTabPane > .navigation > .scroll > .buttons > div > .title {
     float: right;
     text-transform: uppercase;
 }
 .ipsTabPane > .navigation > .scroll > .buttons > div.active {
     border-color: #000000;
+    background-color: #DD6644;
 }
 .ipsTabPane > .navigation > .scroll > .buttons > div > .icon {
     float: right;
 }
 .ipsTabPane > .navigation > .scroll > .buttons.subHidden > div:first-child {
     border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
-div.ipsWebFront div.ipsContainer div.content div.ipsContainer div.ipsContainer div.content div.ipsContainer div.ipsContainer div.content div.ipsContainer {
+.ipsTabPane > .navigation > .scroll > .buttons > div:last-child {
+     height: 100%;
+}
+.ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer {
     position: relative;
     height: 90%;
-    margin-left: 45px;
+    /* margin-left: 45px; */
 }
 html.js body div.ipsWebFront div.ipsContainer div.content {
-    top: 0;
-    left: 95px;
+    top: 40px;
+    left: 105px;
+}
+.ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer {
+    height: auto;
+}
+.ipsTabPane > .navigation > .widgets > div > .title {
+    font-family: lcars_font;
+}
+.ipsWebFront div.ipsContainer div.content div.ipsContainer div.content {
+    top: 19px;
 }
