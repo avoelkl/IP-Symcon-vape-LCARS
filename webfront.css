@@ -7,20 +7,20 @@
 .scrollLeft, .scrollRight {
     display: none;
 }
+/* known issue: .ipsTabPane > .navigation > .scroll > .buttons > div > .title: no word wrap in Chrome* /
+
 /* DONE */
+[class^="ipsIcon"], [class*=" ipsIcon"] {
+    font-size: 24px;
+}
 .ipsWebFront {
     top: 26px;
     height:95%;
 }
-/*
-.ipsWebFront:before {
-    background-image: url("Line.png");
-    background-position: 0 -31px;
-    background-repeat: no-repeat;
-    height: 25px;
-    margin: 0;
-    width: 100%;
-}*/
+.ipsCategory>.container .content .title, .ipsCategory > .container .content .visual {
+    font-size: 22px;
+}
+
 .ipsWebFront:before, .ipsWebFront .ipsContainer .content .ipsContainer .navigation:before {
     content: "";
     display: block;
@@ -33,6 +33,9 @@
 }
 .ipsWebFront div.ipsContainer .content .ipsContainer .navigation:before {
     margin-top: 0;
+    background: url("src/Line2.png") no-repeat;
+    background-color: #FF9900;
+    background-position: 0 -31px;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .content .ipsContainer .ipsContainer .navigation:before {
     background-image: none;
@@ -70,6 +73,12 @@
     /* left: 95px; */
     left: 50px;
 }
+.ipsWebFront div.ipsContainer div.content div.ipsContainer div.content div.ipsContainer div.ipsContainer div.content .ipsCategory {
+    left: 30px;
+}
+.ipsWebFront div.ipsContainer div.content div.ipsContainer div.content div.ipsContainer div.ipsContainer div.content .ipsSplitPane {
+    left: 90px;
+}
 .ipsTabPane > .navigation > .scroll > .buttons {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: #000000;
@@ -103,6 +112,21 @@
 .ipsTabPane > .navigation > .scroll > .buttons > div > .title {
     float: right;
     text-transform: uppercase;
+    display: block;
+    width: 75px;
+    margin: 0 5px;
+    height: 50px;
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for webkit */
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 .ipsTabPane > .navigation > .scroll > .buttons > div.active {
     border-color: #000000;
