@@ -17,6 +17,9 @@
     top: 26px;
     height:95%;
 }
+.ipsCategory > .container {
+    border: 0 none;
+}
 .ipsCategory>.container .content .title, .ipsCategory > .container .content .visual {
     font-size: 22px;
 }
@@ -216,11 +219,20 @@ html.js body .ipsWebFront .ipsContainer .content {
     float: left;
 }
 /* custom */
-.ipsCategory > .container .content .visual, .ipsCategory > .container .content .link {
-    background-color: #FFCC00;
+.ipsCategory > .container .content .title {
+    border-left: 4px solid #000000;
+}
+.tr div {
+    height: 40px;
+    margin-top: -10px;
+}
+.tr div.icon {
+    margin-top: 5px;
+}
+.ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .tr {
+    background-color: #FF9900;
     border: medium none;
     color: #000000;
-    cursor: pointer;
     display: block;
     font-size: 18px;
     height: 20px;
@@ -230,8 +242,13 @@ html.js body .ipsWebFront .ipsContainer .content {
     text-decoration: none;
     border-radius: 20px;
     padding: 10px;
-    width: 120px; /* min-width für An/Aus: 85px */
+    width: 98%;
+}
+.ipsCategory > .container .content .visual, .ipsCategory > .container .content .link {
+    height: 20px;
+    width: auto; /* für überlange button-reihen, 120px,  min-width für An/Aus: 85px */
     float: right;
+    margin-top: 0;
 }
 .ipsCategory > .container .content .link {
     background-color: #FF9900;
@@ -244,13 +261,15 @@ html.js body .ipsWebFront .ipsContainer .content {
     margin-right: 5px;
     margin-top: -10px;
     padding: 2px;
+    border-left: 4px solid #000000;
+    border-right: 4px solid #000000;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer.text {
     height: 40px;
 }
 .ipsCategory > .container .content .visual > .text {
     background: none repeat scroll 0 0 #000000;
-    color: #FFCC00;
+    color: #FF9900;
     display: block;
     float: left;
     height: 40px;
@@ -259,4 +278,24 @@ html.js body .ipsWebFront .ipsContainer .content {
     margin-top: -10px;
     padding: 2px;
     font-size: 30px;
+}
+
+/* An/Aus */
+.ipsCategory > .container .content .visual > .enum {
+    width: 100%;
+    height: 100%;
+}
+.ipsCategory > .container .content .visual > .enum > div {
+    height: 40px;
+    margin-top: -10px;
+    font-size: 32px;
+}
+.ipsCategory > .container .content .visual > .enum > div:first-child {
+    border-right: 4px solid #000000;
+}
+.ipsCategory > .container .content .visual > .enum > div,
+.ipsCategory > .container .content .visual > .selector > div,
+.ipsCategory > .container .extended > .textBox > div,
+.ipsCategory > .container .content .visual > .text.colored {
+    line-height: 40px;
 }
