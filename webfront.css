@@ -56,6 +56,18 @@
     border: 0 none;
     overflow: visible;
 }
+.ipsWebFront .ipsContainer .content {
+    overflow: hidden;
+}
+.ipsWebFront .ipsContainer .content.exclusive,
+.ipsWebFront .ipsContainer .content .ipsContainer .content {
+    overflow: auto;
+}
+.ipsWebFront > .ipsContainer > .content.exclusive,
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content,
+.ipsWebFront > .ipsContainer > .content > .ipsCategory > .ipsTabPane > .content.exclusive{
+    margin-bottom: 26px; /* Korrektur zu unteren LCARS-Leiste */
+}
 .ipsSplitPane.border > .top, .ipsSplitPane.border > .left, .ipsSplitPane.border > .bottom, .ipsSplitPane.border > .right {
     border: 0 none;
 }
@@ -372,7 +384,10 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .visual > .enum > .selected,
 .ipsCategory > .container .content .visual > .selector > .selected {
     background-color: #5e5e5e;
-
+}
+/* Fix An/Aus Bug auf speziellen Seiten */
+.ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer.enum {
+ height: 90%;
 }
 /* ----------------------------------------------------------------------------------------
  *  DIVERSES
