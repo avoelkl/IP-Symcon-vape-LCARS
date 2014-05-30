@@ -271,6 +271,9 @@ html.js body .ipsWebFront .ipsContainer .content {
 .tr div.icon {
     margin-top: -6px;
 }
+.td .enum, .td .text {
+    min-width: 140px;
+}
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .tr {
     background-color: #FF9900;
     border: medium none;
@@ -286,6 +289,9 @@ html.js body .ipsWebFront .ipsContainer .content {
     padding: 10px;
     width: 98%;
 }
+.ipsCategory > .container .content .visual {
+    margin-right: 12px;
+}
 .ipsCategory > .container .content .visual, .ipsCategory > .container .content .link {
     height: 20px;
     width: auto; /* für überlange button-reihen, 120px,  min-width für An/Aus: 85px */
@@ -300,7 +306,6 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .link > .ipsIconGraph {
     font-size: 32px;
     height: 40px;
-    margin-right: 5px;
     margin-top: -10px;
     padding: 2px;
     border-left: 4px solid #000000;
@@ -318,8 +323,6 @@ html.js body .ipsWebFront .ipsContainer .content {
     display: block;
     float: left;
     height: 40px;
-    margin-left: 10px;
-    margin-right: 5px;
     margin-top: -10px;
     padding: 2px;
     font-size: 30px;
