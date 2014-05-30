@@ -1,4 +1,4 @@
-IP-Symcon-LCARS
+IP-Symcon-vape-LCARS
 ===============
 LCARS-Skin for IP-Symcon WebFront
 * color: black/orange
@@ -37,7 +37,7 @@ Installation Instructions
 
 Developer
 ---------
-* Anna Völkl (@rescueAnn) / LimeSoda
+* Anna Völkl (@rescueAnn)
 * [http://www.vape.net](http://www.vape.net)  
 * [@rescueAnn](https://twitter.com/rescueAnn)
 
