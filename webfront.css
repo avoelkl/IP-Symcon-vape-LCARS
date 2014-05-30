@@ -1,15 +1,42 @@
 @import url('src/jquery.lcars.bootstrap.css');
 
-/* TODO */
+/* --------------------------------------------
+ *  TO DO (OR NOT TO DO)
+ * --------------------------------------------
+ */
 .ipsTabPane > .navigation > .sub {
     display: none;
 }
 .scrollLeft, .scrollRight {
     display: none;
 }
-/* known issue: .ipsTabPane > .navigation > .scroll > .buttons > div > .title: no word wrap in Chrome* /
+/* known issue: .ipsTabPane > .navigation > .scroll > .buttons > div > .title: no word wrap in Chrome */
 
-/* DONE */
+/* SCROLLBARS */
+/*
+.ipsContainer .content {
+    scrollbar-base-color: #FF9900‏;
+    scrollbar-track-color: #000000;
+    scrollbar-face-color: #FF9900‏;
+    scrollbar-highlight-color: #FF9900‏;
+    scrollbar-3d-light-color: #000000;
+    scrollbar-darkshadow-color: #FF9900‏;
+    scrollbar-shadow-color: #FF9900‏;
+    scrollbar-arrow-color: #000000;
+}
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #FF9900‏; }
+::-webkit-scrollbar-track {  background-color: #FF9900‏;}
+::-webkit-scrollbar-track-piece { background-color: #000000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #FF9900‏; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #000000;}}
+::-webkit-resizer { background-color: #FF9900‏;}
+*/
+
+/* --------------------------------------------
+ *  DONE
+ * --------------------------------------------
+ */
 [class^="ipsIcon"], [class*=" ipsIcon"] {
     font-size: 24px;
 }
@@ -18,6 +45,14 @@
     height:95%;
 }
 .ipsCategory > .container {
+    border: 0 none;
+    background: none transparent;
+}
+.ipsCategory > .container .childContainers {
+    border: 0 none;
+    background: none transparent;
+}
+.ipsCategory > .container .childContainers > div {
     border: 0 none;
 }
 .ipsCategory>.container .content .title, .ipsCategory > .container .content .visual {
@@ -81,11 +116,28 @@
     left: 115px; /* 91 */
     background-image: none;
 }
-/* CONTENT */
+/* --------------------------------------------
+ *  CONTENT
+ * --------------------------------------------
+ */
 .ipsWebFront .ipsContainer .content .ipsContainer .content .ipsContainer .content {
     top: 0;
     /* left: 0;*/
     float: left;
+}
+
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
+    left: 100px;
+}
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content.exclusive {
+    left: 0;
+}
+/*
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
+    left: 0;
+}*/
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .exclusive {
+    /*left: 100px;*/
 }
 /* Dritte Ebene */
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content {
@@ -96,6 +148,12 @@
     left: 0px;
     top: 19px;
     float: left;
+}
+.ipsWebFront > .ipsContainer > .content > .ipsCategory > .ipsTabPane > .content {
+    left: 100px;
+}
+.ipsWebFront > .ipsContainer > .content > .ipsCategory > .ipsTabPane > .content.exclusive {
+    left: 0;
 }
 
 /* Zweite Ebene: Untermenüpunkt, z.B. Räume > Garten */
@@ -116,14 +174,20 @@ html.js body .ipsWebFront .ipsContainer .content {
     /*left: 105px;*/
 }
 /* Dritte Ebene */
-.ipsWebFront .ipsContainer .content .ipsContainer .content .ipsCategory .content {
-    /*left: 90px;*/
-}
-/* .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content */
-.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content,
-.ipsWebFront > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
+/*
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .exclusive {
     left: 100px;
-}
+}*/
+/*
+.ipsWebFront .ipsContainer .content .ipsContainer .content .ipsCategory .content {
+    left: 90px;
+}*/
+/* .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content */
+/*.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content,*/
+/*.ipsWebFront > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
+    left: 100px;
+}*/
+
 /*
 .ipsWebFront .ipsContainer .content .ipsContainer .content .ipsCategory .ipsTabPane {
     top: -20px;
@@ -136,7 +200,10 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsWebFront > .ipsContainer > .content > .ipsContainer > .exclusive {
     left: 0;
 }*/
-/* BUTTONS, TITLE, ICONS */
+/* --------------------------------------------
+ *  BUTTONS, TITLE, ICOKNS
+ * --------------------------------------------
+ */
 .ipsTabPane > .navigation > .scroll > .buttons {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: #000000;
@@ -208,7 +275,10 @@ html.js body .ipsWebFront .ipsContainer .content {
     font-family: lcars_font;
 }
 
-/* BUTTONS */
+/* --------------------------------------------
+ *  BUTTONS
+ * --------------------------------------------
+ */
 
 /* IP-Symcon override */
 .ipsCategory > .container .content .visual > .text {
@@ -221,13 +291,14 @@ html.js body .ipsWebFront .ipsContainer .content {
 /* custom */
 .ipsCategory > .container .content .title {
     border-left: 4px solid #000000;
+    line-height: 41px;
 }
 .tr div {
     height: 40px;
     margin-top: -10px;
 }
 .tr div.icon {
-    margin-top: 5px;
+    margin-top: -6px;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .tr {
     background-color: #FF9900;
@@ -264,6 +335,9 @@ html.js body .ipsWebFront .ipsContainer .content {
     border-left: 4px solid #000000;
     border-right: 4px solid #000000;
 }
+.ipsCategory > .container .throbber {
+    width: 28px;
+}
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer.text {
     height: 40px;
 }
@@ -280,7 +354,10 @@ html.js body .ipsWebFront .ipsContainer .content {
     font-size: 30px;
 }
 
-/* An/Aus */
+/* --------------------------------------------
+ *  An/Aus Schalter
+ * --------------------------------------------
+ */
 .ipsCategory > .container .content .visual > .enum {
     width: 100%;
     height: 100%;
