@@ -12,6 +12,15 @@
 }
 /* known issue: .ipsTabPane > .navigation > .scroll > .buttons > div > .title: no word wrap in Chrome */
 
+/* known issue: IPSCam Bug: An/Aus nicht sichtbar:
+ Hack für kurze Leisten: geringe Breite, Inhalt sichtbar => childContainer Elemente zu klein
+*/
+/*
+.ipsCategory > .container .content .title {
+    width: 20px;
+    overflow: visible;
+} */
+
 /* SCROLLBARS */
 /*
 .ipsContainer .content {
@@ -48,7 +57,7 @@
     border: 0 none;
     background: none transparent;
 }
-.ipsCategory > .container .childContainers {
+.ipsCategory > .container .childContainers, .ipsCategory>.container .extended>.media {
     border: 0 none;
     background: none transparent;
 }
@@ -65,7 +74,8 @@
 }
 .ipsWebFront > .ipsContainer > .content.exclusive,
 .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content,
-.ipsWebFront > .ipsContainer > .content > .ipsCategory > .ipsTabPane > .content.exclusive{
+.ipsWebFront > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content,
+.ipsWebFront > .ipsContainer > .content > .ipsCategory > .ipsTabPane > .content.exclusive {
     margin-bottom: 26px; /* Korrektur zu unteren LCARS-Leiste */
 }
 .ipsSplitPane.border > .top, .ipsSplitPane.border > .left, .ipsSplitPane.border > .bottom, .ipsSplitPane.border > .right {
@@ -408,7 +418,7 @@ html.js body .ipsWebFront .ipsContainer .content {
     font-size: 20px;
 }
 /* --------------------------------------------
- *  Kamera
+ *  IPSCam
  * --------------------------------------------
  */
 .ipsCategory > .container .content .visual > .keyboardLink,
@@ -416,4 +426,9 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .visual > .timerLink,
 .ipsCategory > .container .content .visual > .runLink {
     margin-top: -10px;
+}
+.ipsCategory>.container .extended>.textBox,
+.ipsCategory>.container .extended>.htmlBox,
+.ipsCategory>.container .extended>.mailBox {
+    border: 0 none;
 }
