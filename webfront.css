@@ -55,6 +55,9 @@
 .ipsCategory > .container .childContainers > div {
     border: 0 none;
 }
+.ipsSplitPane.border > .top, .ipsSplitPane.border > .left, .ipsSplitPane.border > .bottom, .ipsSplitPane.border > .right {
+    border: 0 none;
+}
 .ipsCategory>.container .content .title, .ipsCategory > .container .content .visual {
     font-size: 22px;
 }
@@ -344,7 +347,14 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .visual > .text.colored {
     line-height: 40px;
 }
-
+.ipsCategory > .container .content .visual > .enum > div,
+.ipsCategory > .container .content .visual > .selector > div,
+.ipsCategory > .container .extended > .textBox > div {
+    background-image: none;
+}
+.ipsCategory > .container .content .visual > .text.colored {
+    background-image: none;
+}
 /* --------------------------------------------
  *  Wetterseite
  * --------------------------------------------
