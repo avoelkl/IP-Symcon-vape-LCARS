@@ -54,6 +54,7 @@
 }
 .ipsCategory > .container .childContainers > div {
     border: 0 none;
+    overflow: visible;
 }
 .ipsSplitPane.border > .top, .ipsSplitPane.border > .left, .ipsSplitPane.border > .bottom, .ipsSplitPane.border > .right {
     border: 0 none;
@@ -346,6 +347,9 @@ html.js body .ipsWebFront .ipsContainer .content {
     margin-top: -10px;
     font-size: 32px;
 }
+.ipsCategory > .ipsContainer > .childContainers > .container .content .visual > .enum > div {
+    margin-top: -3px;
+}
 .ipsCategory > .container .content .visual > .enum > div:first-child {
     border-right: 4px solid #000000;
 }
@@ -370,6 +374,10 @@ html.js body .ipsWebFront .ipsContainer .content {
     background-color: #5e5e5e;
 
 }
+/* ----------------------------------------------------------------------------------------
+ *  DIVERSES
+ * ----------------------------------------------------------------------------------------
+ */
 /* --------------------------------------------
  *  Wetterseite
  * --------------------------------------------
@@ -383,4 +391,14 @@ html.js body .ipsWebFront .ipsContainer .content {
 }
 .ipsDWDReport .updated {
     font-size: 20px;
+}
+/* --------------------------------------------
+ *  Kamera
+ * --------------------------------------------
+ */
+.ipsCategory > .container .content .visual > .keyboardLink,
+.ipsCategory > .container .content .visual > .chartLink,
+.ipsCategory > .container .content .visual > .timerLink,
+.ipsCategory > .container .content .visual > .runLink {
+    margin-top: -10px;
 }
