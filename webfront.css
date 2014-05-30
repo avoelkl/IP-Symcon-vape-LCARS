@@ -376,3 +376,18 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .visual > .text.colored {
     line-height: 40px;
 }
+
+/* --------------------------------------------
+ *  Wetterseite
+ * --------------------------------------------
+ */
+.ipsDWDReport .title {
+    font-family: lcars_font;
+    font-size: 32px;
+}
+.ipsDWDReport .text {
+    font-size: 24px;
+}
+.ipsDWDReport .updated {
+    font-size: 20px;
+}
