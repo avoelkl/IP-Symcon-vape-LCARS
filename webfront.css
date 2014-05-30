@@ -132,19 +132,11 @@
 .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content.exclusive {
     left: 0;
 }
-/*
-.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
-    left: 0;
-}*/
 .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .exclusive {
     /*left: 100px;*/
 }
 /* Dritte Ebene */
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content {
-    /* left: 0;*/
-    /* left: 95px; */
-    /* left: 50px;*/
-    /* left: 111px;*/
     left: 0px;
     top: 19px;
     float: left;
@@ -167,39 +159,15 @@
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer {
     position: relative;
     height: 90%;
-    /* margin-left: 45px; */
 }
 html.js body .ipsWebFront .ipsContainer .content {
     top: 40px;
     /*left: 105px;*/
 }
-/* Dritte Ebene */
-/*
-.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .exclusive {
-    left: 100px;
-}*/
-/*
-.ipsWebFront .ipsContainer .content .ipsContainer .content .ipsCategory .content {
-    left: 90px;
-}*/
-/* .ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content */
-/*.ipsWebFront > .ipsContainer > .content > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content,*/
-/*.ipsWebFront > .ipsContainer > .content > .ipsContainer > .ipsContainer > .content {
-    left: 100px;
-}*/
-
-/*
-.ipsWebFront .ipsContainer .content .ipsContainer .content .ipsCategory .ipsTabPane {
-    top: -20px;
-}*/
 .ipsWebFront .ipsContainer .content .ipsContainer .content {
     top: 19px;
     left: 116px;
 }
-/*
-.ipsWebFront > .ipsContainer > .content > .ipsContainer > .exclusive {
-    left: 0;
-}*/
 /* --------------------------------------------
  *  BUTTONS, TITLE, ICOKNS
  * --------------------------------------------
