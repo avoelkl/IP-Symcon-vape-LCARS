@@ -351,9 +351,15 @@ html.js body .ipsWebFront .ipsContainer .content {
 .ipsCategory > .container .content .visual > .selector > div,
 .ipsCategory > .container .extended > .textBox > div {
     background-image: none;
+    background-color: rgba(94,94,94,0.8);
 }
 .ipsCategory > .container .content .visual > .text.colored {
     background-image: none;
+}
+.ipsCategory > .container .content .visual > .enum > .selected,
+.ipsCategory > .container .content .visual > .selector > .selected {
+    background-color: #5e5e5e;
+
 }
 /* --------------------------------------------
  *  Wetterseite
