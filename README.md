@@ -15,7 +15,7 @@ see:
 * https://github.com/ryepup/jquery.lcars
 * http://www.prolenet.org/LCARS/index.html
 
-## LCARS-Color color palettes
+### LCARS-Color color palettes
 http://www.colorhunter.com/tag/lcars/1
 
 Features
@@ -54,6 +54,7 @@ Installation Instructions
 Update Instructions
 -------------------------
 If you already have the Vape_LCARS theme installed (with Git), you can update it the following way:
+
 1. Go to your IP-Symcon folder: for ex. C:\IP-Symcon\webfront\user\skins\Vape_LCARS
 2. Open Git Bash (right click in the explorer windows, select "Git Bash" from menu)
 3. Pull the latest changes with Git: "git pull" (without quotes)
@@ -72,6 +73,7 @@ Similar to the update process, you can switch to the blue colour skin:
 
 You might want to adapt your on/off and info colours a bit so that it looks nicer.
 Change the red colour from RGB 255/0/0 to 170/0/0.
+Change the green colour from RGB 255/0/0 to 0/170/0.
 
 Developer
 ---------
