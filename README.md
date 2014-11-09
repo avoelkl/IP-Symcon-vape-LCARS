@@ -53,9 +53,9 @@ Installation Instructions
 
 Update Instructions
 -------------------------
-If you already have the Vape_LCARS theme installed (with Git), you can update it the following way:
+If you already have the IP-Symcon-vape-LCARS theme installed (with Git), you can update it the following way:
 
-1. Go to your IP-Symcon folder: for ex. C:\IP-Symcon\webfront\user\skins\Vape_LCARS
+1. Go to your IP-Symcon folder: for ex. C:\IP-Symcon\webfront\user\skins\IP-Symcon-vape-LCARS
 2. Open Git Bash (right click in the explorer windows, select "Git Bash" from menu)
 3. Pull the latest changes with Git: "git pull" (without quotes)
 4. The update including the branch with the new blue skin is downloaded
@@ -65,7 +65,7 @@ Switch to blue skin
 -------------------------
 Similar to the update process, you can switch to the blue colour skin:
 
-1. Go to your IP-Symcon folder: for ex. C:\IP-Symcon\webfront\user\skins\Vape_LCARS
+1. Go to your IP-Symcon folder: for ex. C:\IP-Symcon\webfront\user\skins\IP-Symcon-vape-LCARS
 2. Open Git Bash (right click in the explorer windows, select "Git Bash" from menu)
 3. Checkout the blue skin branch: "git checkout skin_blue" (without quotes)
 4. The branch is now changed to the blue skin
