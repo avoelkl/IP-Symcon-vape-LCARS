@@ -24,22 +24,22 @@
 /* SCROLLBARS */
 /*
 .ipsContainer .content {
-    scrollbar-base-color: #FF9900‏;
+    scrollbar-base-color: #597ae2‏;
     scrollbar-track-color: #000000;
-    scrollbar-face-color: #FF9900‏;
-    scrollbar-highlight-color: #FF9900‏;
+    scrollbar-face-color: #597ae2‏;
+    scrollbar-highlight-color: #597ae2‏;
     scrollbar-3d-light-color: #000000;
-    scrollbar-darkshadow-color: #FF9900‏;
-    scrollbar-shadow-color: #FF9900‏;
+    scrollbar-darkshadow-color: #597ae2‏;
+    scrollbar-shadow-color: #597ae2‏;
     scrollbar-arrow-color: #000000;
 }
 ::-webkit-scrollbar { width: 3px; height: 3px;}
-::-webkit-scrollbar-button {  background-color: #FF9900‏; }
-::-webkit-scrollbar-track {  background-color: #FF9900‏;}
+::-webkit-scrollbar-button {  background-color: #597ae2‏; }
+::-webkit-scrollbar-track {  background-color: #597ae2‏;}
 ::-webkit-scrollbar-track-piece { background-color: #000000;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #FF9900‏; border-radius: 3px;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #597ae2‏; border-radius: 3px;}
 ::-webkit-scrollbar-corner { background-color: #000000;}}
-::-webkit-resizer { background-color: #FF9900‏;}
+::-webkit-resizer { background-color: #597ae2‏;}
 */
 
 /* --------------------------------------------
@@ -96,13 +96,13 @@
     width: 100%;
     height: 26px;
     margin: -26px 6px -3px 0;
-    background-color: #FF9900;
+    background-color: #597ae2;
     background-position: 0 -31px;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .navigation:before {
     margin-top: 0;
     background: url("src/Line2.png") no-repeat;
-    background-color: #FF9900;
+    background-color: #597ae2;
     background-position: 0 -31px;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .content .ipsContainer .ipsContainer .navigation:before {
@@ -117,7 +117,7 @@
     width: 100%;
     height: 26px;
     margin: 0 6px 0 0;
-    background-color: #FF9900;
+    background-color: #597ae2;
     background-position: 0 0;
     position: absolute;
     bottom: 0;
@@ -141,11 +141,11 @@
 }
 .ipsWebFront > .ipsTabPane > .navigation > .scroll {
     overflow: hidden;
-    background: none repeat scroll 0 0 #FF9900;
+    background: none repeat scroll 0 0 #597ae2;
     width:87px;
 }
 .ipsTabPane > .navigation > .scroll {
-    background: none repeat scroll 0 0 #FF9900;
+    background: none repeat scroll 0 0 #597ae2;
     width:87px;
 }
 /* Menü, 2. Ebene */
@@ -236,7 +236,7 @@ html.js body .ipsWebFront .ipsContainer .content {
     text-align: right;
     width: 100%;
     height: 85px;
-    background-color: #FF9900;
+    background-color: #597ae2;
     color: #000000;
     font-family: lcars_font;
     font-size: 20px;
@@ -267,7 +267,7 @@ html.js body .ipsWebFront .ipsContainer .content {
 }
 .ipsTabPane > .navigation > .scroll > .buttons > div.active {
     border-color: #000000;
-    background-color: #DD6644;
+    background-color: #6d6b71;
     border-bottom: 2px solid;
 }
 .ipsTabPane > .navigation > .scroll > .buttons > div > .icon {
@@ -287,7 +287,7 @@ html.js body .ipsWebFront .ipsContainer .content {
     text-align: right;
     width: 100%;
     height: 85px;
-    background-color: #FF9900;
+    background-color: #597ae2;
     color: #000000;
     font-family: lcars_font;
     font-size: 20px;
@@ -330,7 +330,7 @@ html.js body .ipsWebFront .ipsContainer .content {
     min-width: 140px;
 }
 .ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .tr {
-    background-color: #FF9900;
+    background-color: #597ae2;
     border: medium none;
     color: #000000;
     display: block;
@@ -354,7 +354,7 @@ html.js body .ipsWebFront .ipsContainer .content {
     margin-top: 0;
 }
 .ipsCategory > .container .content .link {
-    background-color: #FF9900;
+    background-color: #597ae2;
     float: right;
     width: 40px;
 }
@@ -374,7 +374,7 @@ html.js body .ipsWebFront .ipsContainer .content {
 }
 .ipsCategory > .container .content .visual > .text {
     background: none repeat scroll 0 0 #000000;
-    color: #FF9900;
+    color: #597ae2;
     display: block;
     float: left;
     height: 40px;
