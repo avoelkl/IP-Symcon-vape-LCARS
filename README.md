@@ -6,7 +6,8 @@ LCARS-Skin for IP-Symcon WebFront in different colours
 * based on LCARS-Framework
 
 Screenshot:
-http://anna.vape.net/ip-symcon/lcars-skin/
+
+https://anna.voelkl.at/ip-symcon/lcars-skin/
 
 ## LCARS-Framework:
 jquery plugin for star-trek style LCARS interface, fork of existing project
@@ -78,7 +79,7 @@ Change the green colour from RGB 255/0/0 to 0/170/0.
 Developer
 ---------
 * Anna Völkl (@rescueAnn)
-* [http://www.vape.net](http://www.vape.net)
+* [http://www.voelkl.at](http://www.voelkl.at)
 * [@rescueAnn](https://twitter.com/rescueAnn)
 
 Copyright
